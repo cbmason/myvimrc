@@ -41,7 +41,8 @@ ab #b /*************************************************************************
 ab #e ********************************************************************************/
 
 " Tab completions
-set wildmode=longest,list
+"set wildmode=longest,list
+set wildmenu
 
 " Enable filetype plugins
 filetype plugin on
@@ -51,5 +52,8 @@ filetype indent on
 set autoread
 
 " Always show the status line
-set laststatus=2
+"set laststatus=2
+
+" Regexp magic
+set magic
 
