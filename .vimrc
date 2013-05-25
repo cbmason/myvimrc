@@ -57,3 +57,8 @@ set autoread
 " Regexp magic
 set magic
 
+" set tabstop=4
+" set shiftwidth=4
+" set expandtab
+
+
