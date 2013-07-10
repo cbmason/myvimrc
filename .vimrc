@@ -63,3 +63,17 @@ set magic
 
 autocmd FileType html setlocal shiftwidth=2 tabstop=2
 
+color elflord
+
+function! ResCur()
+	if line("'\"") <= line("$")
+		normal! g`"
+		return 1
+	endif
+endfunction
+
+augroup resCur
+	autocmd!
+	autocmd BufWinEnter * call ResCur()
+augroup END
+
