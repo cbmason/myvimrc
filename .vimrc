@@ -26,10 +26,12 @@ set incsearch
 set hlsearch
 
 " Smart indentation in C
+set autoindent
 set cindent
-set ai
-set si
-
+filetype plugin on
+filetype indent on
+inoremap # #
+	
 " Wrap lines
 set wrap
 
@@ -44,9 +46,6 @@ ab #e **************************************************************************
 "set wildmode=longest,list
 set wildmenu
 
-" Enable filetype plugins
-filetype plugin on
-filetype indent on
 
 " Set to auto read when a file is changed from the outside
 set autoread
