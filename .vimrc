@@ -76,3 +76,6 @@ augroup resCur
 	autocmd BufWinEnter * call ResCur()
 augroup END
 
+" In most of my projects, the ctags file is one directory above the src
+set tags=../tags
+
