@@ -30,7 +30,7 @@ set autoindent
 set cindent
 filetype plugin on
 filetype indent on
-inoremap # #
+"inoremap # #
 	
 " Wrap lines
 set wrap
