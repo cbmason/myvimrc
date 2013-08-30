@@ -56,13 +56,21 @@ set autoread
 " Regexp magic
 set magic
 
+autocmd FileType html setlocal shiftwidth=2 tabstop=2
+
+color elflord
+
 " set tabstop=4
 " set shiftwidth=4
 " set expandtab
 
-autocmd FileType html setlocal shiftwidth=2 tabstop=2
+let _curfile = expand("%:t")
+if _curfile =~ "Makefile" || _curfile =~ "makefile"
+        set noexpandtab
+else
+        set expandtab
+endif
 
-color elflord
 
 function! ResCur()
 	if line("'\"") <= line("$")
