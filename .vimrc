@@ -59,6 +59,8 @@ set magic
 autocmd FileType html setlocal shiftwidth=2 tabstop=2
 
 color elflord
+hi IncSearch ctermbg=white
+hi IncSearch ctermfg=black
 
 " set tabstop=4
 " set shiftwidth=4
