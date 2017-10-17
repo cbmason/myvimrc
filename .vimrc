@@ -89,3 +89,8 @@ augroup END
 " In most of my projects, the ctags file is one directory above the src
 set tags=../tags
 
+set switchbuf=usetab
+
+nnoremap <F8> :sbnext<CR>
+nnoremap <S-F8> :sbprevious<CR>
+
